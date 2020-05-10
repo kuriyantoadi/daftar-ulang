@@ -12,7 +12,8 @@ if ($_SESSION['status']!="mesin") {
 
     if ($kondisi == "daftar_ulang_tolak") {
         mysqli_query($koneksi, "UPDATE t_siswa SET
-             kondisi='Harap Ulangi Daftar Ulang'
+             kondisi='Harap Ulangi Daftar Ulang',
+             pdf_daftar_ulang=''
              where id='$id'
              ");
         header("location:index.php");
