@@ -65,6 +65,7 @@
       pdf_daftar_ulang,
       file_download,
       status,
+      kondisi,
       info
 
        from t_siswa where username='$username'");
@@ -107,6 +108,10 @@
         <tr>
           <td>Asal Sekolah</td>
           <td><?php echo $d['asal_sekolah']; ?></td>
+        </tr>
+        <tr>
+          <td>Status Daftar Ulang</td>
+          <td><?php echo $d['kondisi']; ?></td>
         </tr>
         <tr>
           <td>File Download</td>

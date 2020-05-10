@@ -30,11 +30,11 @@ if ($cek > 0) {
         $_SESSION['status'] = "admin";
         header("location:jurusan/admin.php");
     } else {
-        echo "salah1";
+        // echo "salah1";
         header("location:index.php?pesan=gagal1");
     }
 } else {
-    echo "salah2";
+    // echo "salah2";
 
     header("location:index.php?pesan=gagal");
 }
